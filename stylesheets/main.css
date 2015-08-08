@@ -1,0 +1,207 @@
+.c {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.fl {
+  float: left !important;
+  display: inline;
+}
+
+.fr {
+  float: right !important;
+  display: inline;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.clearboth {
+  clear: both;
+}
+
+.clnone {
+  clear: none !important;
+}
+
+:focus, :active {
+  outline: 0;
+  border: 0;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+a, a:visited, a:focus, a:active, a:hover {
+  outline: 0 none !important;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+html, body {
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  background: #000;
+  height:600px;
+  position: relative;
+  overflow: hidden;
+}
+
+#bg {
+  position: absolute;
+  left:50%;
+  top:50%;
+  z-index: 5;
+  opacity: 1;
+}
+
+.logo {
+  padding:20px 0 0;
+  display: block;
+}
+
+.logo img {
+  width: 197px;
+  height:50px;
+}
+
+.headline {
+  color:#fff;
+  padding: 100px 0 0 0;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.headline-container {
+  height: 600px;
+  position: relative;
+  background: url('../img/grad.png') repeat-x 0 0;
+  z-index: 100;
+  font-size: 18px;
+}
+
+form {
+  padding-top: 20px;
+}
+
+form .col {
+  padding: 0 5px !important;
+}
+
+form .btn {
+  width:100%;
+}
+
+.feature-ico {
+  width:30%;
+  height:90px;
+  float:left;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.feature-leagues {
+  background: transparent url('/images/feature-icons.png') no-repeat 50% -180px;
+}
+
+.feature-api {
+  background: transparent url('/images/feature-icons.png') no-repeat 50% 0;
+}
+
+.feature-latency {
+  background: transparent url('/images/feature-icons.png') no-repeat 50% -90px;
+}
+
+.features {
+  background: #f9f9f9;
+  padding:20px 0 20px;
+}
+
+.feature-i {
+  width: 65%;
+  float:right;
+}
+
+footer {
+  padding: 20px 0;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+
+  form .col {
+    padding: 0 15px !important;
+  }
+
+  .headline-container {
+    height: auto;
+    padding-bottom: 100px;
+  }
+  .headline {
+    padding-top: 60px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  form .btn {
+    margin-top:20px;
+    width:auto;
+    float: right;
+  }
+
+  .logo img {
+    width: 197px;
+    height:50px;
+  }
+}
